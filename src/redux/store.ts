@@ -1,14 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { UserInfo } from "../models";
-import  userSliceReducer  from "./states/user";
+import userReducer from "./states/user";
 
+export const store = configureStore({
+  reducer: {
+    user: userReducer,
+  },
+});
 
-export interface AppStore{
-    user: UserInfo;
-}
-
-export default configureStore<AppStore>({
-    reducer: {
-        user: userSliceReducer
-    }
-})
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
