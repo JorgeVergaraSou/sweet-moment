@@ -33,7 +33,7 @@ export default function ContactoPage() {
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "center",
-        backgroundImage: "url('/img/caramelos-fondo.png')",
+        backgroundImage: `url(${import.meta.env.BASE_URL}img/caramelos-fondo.png)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

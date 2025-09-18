@@ -16,25 +16,40 @@ import "slick-carousel/slick/slick-theme.css";
 const categories = [
   {
     title: "Bodas",
-    cover: "/img/bodas1.jpg",
-    images: ["/img/bodas1.jpg", "/img/bodas2.jpg", "/img/bodas3.jpg"],
+    cover: `${import.meta.env.BASE_URL}img/bodas1.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}img/bodas1.jpg`,
+      `${import.meta.env.BASE_URL}img/bodas2.jpg`,
+      `${import.meta.env.BASE_URL}img/bodas3.jpg`
+    ],
   },
   {
     title: "Graduaciones",
-    cover: "/img/graduaciones1.jpg",
-    images: ["/img/graduaciones1.jpg", "/img/imagen2.PNG"],
+    cover: `${import.meta.env.BASE_URL}img/graduaciones1.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}img/graduaciones1.jpg`,
+      `${import.meta.env.BASE_URL}img/imagen2.PNG`
+    ],
   },
   {
     title: "Cumpleaños",
-    cover: "/img/imagen3.PNG",
-    images: ["/img/imagen3.PNG", "/img/imagen3.PNG", "/img/imagen3.PNG"],
+    cover: `${import.meta.env.BASE_URL}img/imagen3.PNG`,
+    images: [
+      `${import.meta.env.BASE_URL}img/imagen3.PNG`,
+      `${import.meta.env.BASE_URL}img/imagen3.PNG`,
+      `${import.meta.env.BASE_URL}img/imagen3.PNG`
+    ],
   },
   {
     title: "Eventos Empresariales",
-    cover: "/img/eventos1.jpg",
-    images: ["/img/eventos1.jpg", "/img/imagen1.PNG"],
+    cover: `${import.meta.env.BASE_URL}img/eventos1.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}img/eventos1.jpg`,
+      `${import.meta.env.BASE_URL}img/imagen1.PNG`
+    ],
   },
 ];
+
 
 // Flechas grandes fijas, sin animación ni hover
 function SampleNextArrow(props: any) {
@@ -112,7 +127,7 @@ export default function GaleriaPage() {
         justifyContent: "flex-start",
         alignItems: "center",
         position: "relative",
-        backgroundImage: "url('/img/caramelos-fondo.png')",
+        backgroundImage: `url(${import.meta.env.BASE_URL}img/hero.png)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

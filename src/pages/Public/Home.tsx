@@ -31,7 +31,7 @@ export default function Home() {
           left: 0,
           width: "100vw",
           height: "100vh",
-          backgroundImage: "url(/img/hero.png)",
+          backgroundImage: `url(${import.meta.env.BASE_URL}img/hero.png)`,
           backgroundSize: "cover",
           backgroundPosition: `center ${offsetY * 0.3}px`,
           zIndex: -2,
