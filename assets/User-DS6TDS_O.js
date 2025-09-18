@@ -1,0 +1,1 @@
+import{j as e}from"./index-9y1dqdQT.js";function i(){return e.jsxs("div",{children:[e.jsx("h1",{children:"Bienvenido "}),e.jsx("p",{children:"Correo: "}),e.jsx("p",{children:"Rol: "})]})}export{i as default};
