@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://jorgevergarasou.github.io/sweet-moment",
+  "homepage": "https://jorgevergarasou.github.io/sweet-moment-candy",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
