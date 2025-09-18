@@ -1,17 +1,15 @@
-import { useSelector } from 'react-redux';
-import { AppStore } from '../../../redux/store';
-
+// src/pages/Private/Admin/Admin.tsx
 
 function AdminPage() {
-  const user = useSelector((state: AppStore) => state.user);
+ 
 
   return (
     <div>
       <h1>
-        Bienvenido, {user.name}
+        Bienvenido,
       </h1>
-      <div><h3>Correo: {user.email}</h3>
-      <h4>Rol: {user.role}</h4>
+      <div><h3>Correo: </h3>
+      <h4>Rol: </h4>
       </div>
 
       <div>

@@ -1,15 +1,14 @@
-import { useSelector } from 'react-redux';
-import { AppStore } from '../../../redux/store';
+// src/pages/Private/User/User.tsx
 
 
 function UserPage() {
-  const user = useSelector((state: AppStore) => state.user);
+
 
   return (
     <div>
-      <h1>Bienvenido {user.name}</h1>
-      <p>Correo: {user.email}</p>
-      <p>Rol: {user.role}</p>
+      <h1>Bienvenido </h1>
+      <p>Correo: </p>
+      <p>Rol: </p>
     </div>
   );
 }
